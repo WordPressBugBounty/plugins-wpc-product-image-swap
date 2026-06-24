@@ -117,8 +117,6 @@ if ( ! class_exists( 'Wpcis_Backend' ) && class_exists( 'WC_Product' ) ) {
         }
 
         function init() {
-            // load text-domain
-            load_plugin_textdomain( 'wpc-product-image-swap', false, basename( WPCIS_DIR ) . '/languages/' );
 
             self::$effects_in  = apply_filters( 'wpcis_effects_in', self::$effects_in );
             self::$effects_out = apply_filters( 'wpcis_effects_out', self::$effects_out );

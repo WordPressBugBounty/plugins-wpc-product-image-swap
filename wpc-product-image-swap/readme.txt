@@ -2,9 +2,9 @@
 Contributors: wpclever
 Donate link: https://wpclever.net
 Tags: woocommerce, wpc, image, swap, slider
-Tested up to: 6.9
-Version: 1.2.3
-Stable tag: 1.2.3
+Tested up to: 7.0
+Version: 1.2.4
+Stable tag: 1.2.4
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -49,6 +49,10 @@ Visit our [live demo](https://demo.wpclever.net/wpckid/ "live demo") here to see
 4. Go to WPC Product Image Swap to configure
 
 == Changelog ==
+
+= 1.2.4 =
+* Updated: Removed load_plugin_textdomain()
+* Updated: Compatible with WP 7.0 & Woo 10.8
 
 = 1.2.3 =
 * Updated: Optimized the code
