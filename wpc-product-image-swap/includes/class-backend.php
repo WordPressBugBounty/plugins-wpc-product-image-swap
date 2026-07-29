@@ -173,7 +173,7 @@ if ( ! class_exists( 'Wpcis_Backend' ) && class_exists( 'WC_Product' ) ) {
 
         function admin_menu_content() {
             // phpcs:ignore WordPress.Security.NonceVerification.Recommended -- admin page display only
-            $active_tab = sanitize_key( $_GET['tab'] ?? 'settings' );
+            $active_tab = sanitize_key( wp_unslash( $_GET['tab'] ?? 'settings' ) );
             ?>
             <div class="wpclever_settings_page wrap">
                 <div class="wpclever_settings_page_header">
@@ -632,21 +632,21 @@ if ( ! class_exists( 'Wpcis_Backend' ) && class_exists( 'WC_Product' ) ) {
         // phpcs:disable WordPress.Security.NonceVerification.Missing -- nonce verified by WooCommerce in woocommerce_process_product_meta
         function process_product_meta( $post_id ) {
             if ( isset( $_POST['wpcis_images'] ) ) {
-                update_post_meta( $post_id, 'wpcis_images', sanitize_text_field( wp_unslash( $_POST['wpcis_images'] ) ) );
+                update_post_meta( $post_id, 'wpcis_images', sanitize_text_field( wp_unslash( $_POST['wpcis_images'] ?? '' ) ) );
             }
 
             if ( isset( $_POST['wpcis_type'] ) ) {
-                update_post_meta( $post_id, 'wpcis_type', sanitize_text_field( wp_unslash( $_POST['wpcis_type'] ) ) );
+                update_post_meta( $post_id, 'wpcis_type', sanitize_text_field( wp_unslash( $_POST['wpcis_type'] ?? '' ) ) );
             }
 
             if ( isset( $_POST['wpcis_swap'] ) ) {
                 // phpcs:ignore WordPress.Security.ValidatedSanitizedInput.InputNotSanitized -- sanitized by self::sanitize_array()
-                update_post_meta( $post_id, 'wpcis_swap', self::sanitize_array( wp_unslash( $_POST['wpcis_swap'] ) ) );
+                update_post_meta( $post_id, 'wpcis_swap', self::sanitize_array( wp_unslash( $_POST['wpcis_swap'] ?? '' ) ) );
             }
 
             if ( isset( $_POST['wpcis_slider'] ) ) {
                 // phpcs:ignore WordPress.Security.ValidatedSanitizedInput.InputNotSanitized -- sanitized by self::sanitize_array()
-                update_post_meta( $post_id, 'wpcis_slider', self::sanitize_array( wp_unslash( $_POST['wpcis_slider'] ) ) );
+                update_post_meta( $post_id, 'wpcis_slider', self::sanitize_array( wp_unslash( $_POST['wpcis_slider'] ?? '' ) ) );
             }
         }
         // phpcs:enable WordPress.Security.NonceVerification.Missing

@@ -3,8 +3,8 @@ Contributors: wpclever
 Donate link: https://wpclever.net
 Tags: woocommerce, wpc, image, swap, slider
 Tested up to: 7.0
-Version: 1.2.4
-Stable tag: 1.2.4
+Version: 1.2.5
+Stable tag: 1.2.5
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -41,6 +41,16 @@ Visit our [live demo](https://demo.wpclever.net/wpckid/ "live demo") here to see
 - Diverse animations, smooth transitions that can work on most themes
 - Compatible with common WP themes and WooCommerce add-ons
 
+= Need more features? =
+
+Please try other plugins from us:
+
+- [WPC Smart Compare](https://wordpress.org/plugins/woo-smart-compare/ "WPC Smart Compare")
+- [WPC Smart Quick View](https://wordpress.org/plugins/woo-smart-quick-view/ "WPC Smart Quick View")
+- [WPC Smart Wishlist](https://wordpress.org/plugins/woo-smart-wishlist/ "WPC Smart Wishlist")
+- [WPC Smart Notification](https://wordpress.org/plugins/wpc-smart-notification/ "WPC Smart Notification")
+- [WPC AJAX Add to Cart](https://wordpress.org/plugins/wpc-ajax-add-to-cart/ "WPC AJAX Add to Cart")
+
 == Installation ==
 
 1. Please make sure that you installed WooCommerce
@@ -49,6 +59,10 @@ Visit our [live demo](https://demo.wpclever.net/wpckid/ "live demo") here to see
 4. Go to WPC Product Image Swap to configure
 
 == Changelog ==
+
+= 1.2.5 =
+* Fixed: Minor CSS/JS issues in the backend
+* Updated: Compatible with WP 7.0 & Woo 10.9
 
 = 1.2.4 =
 * Updated: Removed load_plugin_textdomain()

@@ -3,7 +3,7 @@
 Plugin Name: WPC Product Image Swap for WooCommerce
 Plugin URI: https://wpclever.net/
 Description: It presents products visually engagingly to customers by offering attention-drawing swapping effects for images of products on archive/shop pages.
-Version: 1.2.4
+Version: 1.2.5
 Author: WPClever
 Author URI: https://wpclever.net
 Text Domain: wpc-product-image-swap
@@ -12,14 +12,14 @@ Requires Plugins: woocommerce
 Requires at least: 5.9
 Tested up to: 7.0
 WC requires at least: 3.0
-WC tested up to: 10.8
+WC tested up to: 10.9
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 */
 
 defined( 'ABSPATH' ) || exit;
 
-! defined( 'WPCIS_VERSION' ) && define( 'WPCIS_VERSION', '1.2.4' );
+! defined( 'WPCIS_VERSION' ) && define( 'WPCIS_VERSION', '1.2.5' );
 ! defined( 'WPCIS_LITE' ) && define( 'WPCIS_LITE', __FILE__ );
 ! defined( 'WPCIS_FILE' ) && define( 'WPCIS_FILE', __FILE__ );
 ! defined( 'WPCIS_URI' ) && define( 'WPCIS_URI', plugin_dir_url( __FILE__ ) );
