@@ -2,9 +2,8 @@
 Contributors: wpclever
 Donate link: https://wpclever.net
 Tags: woocommerce, wpc, image, swap, slider
-Tested up to: 7.0
-Version: 1.2.5
-Stable tag: 1.2.5
+Tested up to: 7.1
+Stable tag: 1.2.6
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -59,6 +58,9 @@ Please try other plugins from us:
 4. Go to WPC Product Image Swap to configure
 
 == Changelog ==
+
+= 1.2.6 =
+* Fixed: Minor CSS/JS issues in the backend
 
 = 1.2.5 =
 * Fixed: Minor CSS/JS issues in the backend
